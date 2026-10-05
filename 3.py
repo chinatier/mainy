@@ -1,0 +1,15 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("Калькулятор")
+window.geometry("300x250")
+def pole_vvoda():
+    text1 = entry1.get()
+    text2 = entry2.get()
+    print(f"Поле 1: {text1}, Поле 2: {text2}")
+entry1 = tk.Entry(window)
+entry1.pack(pady=10)
+entry2 = tk.Entry(window)
+entry2.pack(pady=20)
+button = tk.Button(window, text="сложить", font="Arial", command=pole_vvoda)
+button.pack(pady=10)
+window.mainloop()
