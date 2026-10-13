@@ -1,0 +1,10 @@
+import tkinter as tk
+root = tk.Tk()
+root.title("Визитка")
+root.geometry("380x270")
+tk.Label(root, text="Никита", font=("Arial", 22, "bold")).pack(pady=15)
+tk.Label(root, text="Студент", font=("Arial", 16)).pack()
+info = tk.Label(root, text="Изучаю Python и базы данных")
+info.pack(pady=15)
+tk.Button(root, text="Подробнее", command=lambda: info.config(text="Интересуюсь разработкой приложений")).pack()
+root.mainloop()
